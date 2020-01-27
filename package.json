@@ -1,0 +1,30 @@
+{
+  "name": "web-router",
+  "version": "1.0.0",
+  "description": "Web router for client side projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev:server": "nodemon index.js",
+    "serve:account": "npm run serve --prefix clients/account",
+    "serve:search": "npm run serve --prefix clients/search",
+    "build:account": "npm run build --prefix clients/account",
+    "build:search": "npm run build --prefix clients/search",
+    "build:clients": "concurrently \"npm run build:account\" \"npm run build:search\""
+  },
+  "author": "Homie llc",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0",
+    "koa": "^2.11.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
