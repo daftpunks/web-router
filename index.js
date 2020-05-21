@@ -29,4 +29,4 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, '/distribution/static/404.html'))
 })
 
-app.listen(3000, () => console.log('server running .. hi ✋'))
+app.listen(5555, () => console.log('server running .. hi ✋'))
